@@ -1,4 +1,5 @@
  
+ //********************************************** */
  
  // primitive => 7
  // types => String, Number, Boolean, null, undefined, Symbol, BigInt
@@ -11,7 +12,7 @@ let userEmail;
 
 //console.log("hii")
 
-
+// **********************************************************
 
  // Refrence (Non primitive)
  // types => Array, Objects, Functions
@@ -33,9 +34,31 @@ let userEmail;
     console.log("hello world");
  }
 
- console.log(typeof myFunction);
+//  console.log(typeof myFunction);
 
- console.log(heros);
- console.log(myOBJ);
+//  console.log(heros);
+//  console.log(myOBJ);
  
+/** stack and heap memory */
 
+
+let name = "hitesh"
+let anothername = name
+console.log(anothername)
+
+anothername = "chaiaurcode"
+console.log(anothername)
+
+
+
+let userone = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+let usertwo = userone
+
+usertwo.email = "hitesh@google.com"
+
+console.log(userone.email);
+console.log(usertwo.email);
